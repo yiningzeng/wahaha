@@ -100,6 +100,9 @@ int dodo(String imgpath){
 
     for (int i = 0; i < 4; i++)
         line(srcImage, vertices[i], vertices[(i+1)%4], Scalar(0,255,0), 2);
+
+//    Rect brect = rRect.boundingRect();
+//    rectangle(srcImage, brect, Scalar(255,0,0), 2);
     imshow("final", srcImage);
 
 //    vector<vector<Point>> polyContours(contours.size());
